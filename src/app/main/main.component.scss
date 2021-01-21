@@ -1,0 +1,53 @@
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
+    width: 0;
+    display: block;
+    background: black;
+    transition: width .2s;
+    height: 2px;
+    cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    transition: width .2s;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+}
+
+.bg-dark {
+    background-color: #fff!important;
+    line-height: 5vh;
+}
+
+#sec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/alex-knight-j4uuKnN43_M-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 105vh;
+    // background-attachment: fixed;
+}
+
+.card {
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, .16);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+img {
+    width: 100%;
+}
